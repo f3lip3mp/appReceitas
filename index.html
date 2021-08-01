@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/js/index.js"></script>
 
 </head>
 
@@ -20,7 +19,7 @@
       <header class="cabecalho">
         <div class="navbar">
           <figure class="logotipo">
-            <img src="./assets/img/logotipo.png" alt="logotipo">
+            <img class="oi class" src="./assets/img/logotipo.png" alt="logotipo">
           </figure>
           <nav class="menu">
             <ul>
@@ -36,16 +35,15 @@
         <div class="side_search">
           <div class="side_input">
             <i class="fas fa-search"></i> 
-            <input type="text" placeholder="Search by recipes or ingredients">
+            <input id="searchInput" type="text" placeholder="Search by recipes or ingredients">
           </div>
           <button class="side_filter">
             <i class="fas fa-filter"></i>
             <span>Recipe Wizard</span>
           </button>
         </div>
-
+        <h2 class="recipes_title">What are we cooking now?</h2>
         <div class="recipes">
-          <h2 class="recipes_title">What are we cooking now?</h2>
           <div class="box_recipe">
             <h2 class="box_title">
               Saladas
@@ -120,11 +118,29 @@
         </div>
       </main>
     </div>
-    <aside class="">
+    <aside class="slider-container">
+      <div class="boxSlider">
+        <div class="textOnPhoto">
+        <p id="title_phslide">Recipe of the Week</p>
+        <p id="subtitle_phslide">Pão com<br> ovo</p>
+        <div class="gradient_overlay">
+        <img class="selected" src="./assets/img/slide_ph1.jpg" alt="">
+        </div>
+        </div>
+        <img src="./assets/img/slide_ph2.jpg" alt="">
+        <img src="./assets/img/slide_ph3.jpg" alt="">
+        <img src="./assets/img/slide_ph4.jpg" alt="">
+      </div>
+      <div class="buttonSlide">
+      <button class="btn previous"><i class="fas fa-chevron-left"></i></button>
+      <div id="pagination">
 
+      </div>
+      <button class="btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
     </aside>
   </div>
-
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
