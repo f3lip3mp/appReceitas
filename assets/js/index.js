@@ -21,7 +21,6 @@ function nextImage(){
   images[currentImageIndex].classList.remove("selected")
   i[currentImageIndex].classList.remove("selected")
   currentImageIndex++
-  console.log(currentImageIndex)
   
   if (currentImageIndex >= max)
     currentImageIndex = 0
